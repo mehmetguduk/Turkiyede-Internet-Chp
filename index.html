@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/countries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
 
     <main>
+
         <section id="welcome">
             <div class="welcome-container">
                 <img class="clouds" src="img/clouds.jpg" alt="Clouds">
@@ -25,8 +28,23 @@
                 <img class="chp-logo" src="img/chplogo.png" alt="Cumhuriyet Halk Partisi Logo">
             </div>
         </section>
+
         <section id="text-1"></section>
-        <section id="countries"></section>
+
+        <section id="countries">
+            <div class="dropdown-bar">
+                <div class="dropdown-message">Lütfen ülke seçin</div>
+                <button class="dropdown-button"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            </div>
+            <div class="dropdown">
+                <ul class="country-list"></ul>
+            </div>
+            <div class="download">
+                <div class="download-header">ORTALAMA İNDİRME HIZI</div>
+                <div class="download-speed"></div>
+            </div>
+        </section>
+
     </main>
     <footer></footer>
 

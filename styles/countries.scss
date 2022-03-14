@@ -1,0 +1,63 @@
+section#countries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    div.dropdown-bar {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        width: 400px;
+
+        div.dropdown-message {
+            display: inline;
+            background-color: lightslategray; // SİLİNECEK
+            padding: 5px 50px;
+            cursor: pointer;
+        }
+        button.dropdown-button {
+            display: inline;
+            border: none;
+            background-color: lightslategray; // SİLİNECEK
+            padding: 4.9px 10px;
+            cursor: pointer;
+
+            i.fa-caret-down {
+                font-size: 20px;
+            }
+        }
+    }
+
+    div.dropdown {
+        background-color: lightblue; // SİLİNECEK
+        width: 400px;
+        display: none;
+
+        ul.country-list {
+            max-height: 200px;
+            overflow: scroll;
+            overflow-x: hidden;
+
+            li.country {
+                cursor: pointer;
+
+                &:hover {
+                    background-color: lightseagreen; // SİLİNECEK
+                }
+
+                &:active {
+                    background-color: limegreen; // SİLİNECEK
+                }
+            }
+        }
+    }
+
+    div.download {
+        div.download-header {
+        }
+        div.download-speed {
+        }
+    }
+}

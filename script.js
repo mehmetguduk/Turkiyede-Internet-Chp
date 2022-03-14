@@ -3,7 +3,6 @@ const ul_country_list = document.querySelector("ul.country-list")
 
 function removeWELCOME() {
     div_welcome_container.style.display = "none";
-
 }
 
 setTimeout(removeWELCOME, 1000)

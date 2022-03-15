@@ -32,13 +32,14 @@ section#welcome {
                     text-decoration: none;
                     color: var(--red1);
                     font-size: 30px;
+                    transition: color 0.2s;
 
-                    &:visited{
+                    &:visited {
                         color: var(--red1);
                     }
 
-                    &:hover{
-                        text-decoration: underline;
+                    &:hover {
+                        color: var(--blue1);
                     }
 
                     span {

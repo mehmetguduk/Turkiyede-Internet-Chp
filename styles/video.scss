@@ -1,0 +1,14 @@
+section#video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--white1);
+
+    div.video-container {
+
+        iframe {
+        }
+    }
+}

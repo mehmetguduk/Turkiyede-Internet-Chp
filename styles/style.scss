@@ -6,7 +6,7 @@
     --blue2: #e4f2ff;
     --blue3: #e8eff5;
     --gray1: #2c2c2c;
-    --white1: #ffffff;
+    --white1: #f5f5f5;
 }
 
 * {
@@ -29,7 +29,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 2px;
+    border-radius: 1px;
     background: var(--red1);
 
     &:hover {

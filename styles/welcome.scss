@@ -49,11 +49,15 @@ section#welcome {
             }
         }
 
-        img.chp-logo {
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            height: 100px;
+        a.chp-logo {
+            img.logo {
+                border: 5px solid var(--white1);
+                position: fixed;
+                right: 10px;
+                bottom: 10px;
+                height: 100px;
+                z-index: 99;
+            }
         }
     }
 }

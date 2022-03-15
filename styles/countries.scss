@@ -1,25 +1,36 @@
-
-
 section#countries {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     user-select: none;
     height: 100vh;
+
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--blue2);
+
+    img.clouds {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        object-fit: cover;
+    }
 
     div.dropdown-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 100px;
+        margin: 100px;
+        z-index: 1;
+        position: relative;
 
         div.dropdown-message {
             display: inline;
-            background-color: var(--blue2); // SİLİNECEK
+            background-color: var(--white1);
             padding: 10px 0;
             width: 100%;
             text-align: center;
@@ -34,20 +45,22 @@ section#countries {
         }
 
         div.dropdown {
-            background-color: var(--blue3);
+            position: absolute;
+            top: 50px;
+            background-color: #eef1f3;
             display: none;
-            border-radius: 5px;
             width: 100%;
             text-align: center;
             font-size: 18px;
 
             ul.country-list {
+                border-radius: 0 0 5px 5px;
                 max-height: 200px;
                 overflow: scroll;
                 overflow-x: hidden;
 
                 li.country {
-                    color: var(--red1);
+                    color: var(--gray1);
                     cursor: pointer;
                     transition: background-color 0.1s, color 0.1s;
                     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
@@ -59,7 +72,8 @@ section#countries {
                     }
 
                     &:active {
-                        background-color: var(--red1);
+                        background-color: var(--gray1);
+                        color: var(--white1);
                     }
                 }
             }

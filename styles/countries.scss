@@ -22,73 +22,156 @@ section#countries {
     div.dropdown-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 100px;
         z-index: 1;
-        position: relative;
 
-        div.dropdown-message {
-            display: inline;
-            background-color: var(--white1);
-            padding: 10px 0;
-            width: 100%;
-            text-align: center;
-            color: var(--blue1);
-            border-radius: 5px;
-            font-size: 30px;
-            cursor: pointer;
+        div.country-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
-            i.fa-caret-down {
-                font-size: 20px;
+            div.dropdown-message-country {
+                display: inline;
+                background-color: var(--white1);
+                padding: 10px 0;
+                width: 100%;
+                text-align: center;
+                color: var(--blue1);
+                border-radius: 5px;
+                font-size: 30px;
+                cursor: pointer;
+
+                i.fa-caret-down {
+                    font-size: 20px;
+                }
             }
-        }
 
-        div.dropdown {
-            position: absolute;
-            top: 50px;
-            background-color: #eef1f3;
-            display: none;
-            width: 100%;
-            text-align: center;
-            font-size: 18px;
+            div.dropdown-country {
+                display: none;
+                position: absolute;
+                top: 50px;
+                background-color: #eef1f3;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
 
-            ul.country-list {
-                border-radius: 0 0 5px 5px;
-                max-height: 200px;
-                overflow: scroll;
-                overflow-x: hidden;
+                ul.country-list {
+                    border-radius: 0 0 5px 5px;
+                    max-height: 200px;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                    list-style-type: none;
 
-                li.country {
-                    color: var(--gray1);
-                    cursor: pointer;
-                    transition: background-color 0.1s, color 0.1s;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-                    padding: 3px 0;
+                    li.country {
+                        color: var(--gray1);
+                        cursor: pointer;
+                        transition: background-color 0.1s, color 0.1s;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+                        padding: 3px 0;
 
-                    &:hover {
-                        background-color: var(--blue1);
-                        color: var(--white1);
+                        &:hover {
+                            background-color: var(--blue1);
+                            color: var(--white1);
+                        }
+
+                        &:active {
+                            background-color: var(--gray1);
+                            color: var(--white1);
+                        }
                     }
+                }
+            }
 
-                    &:active {
-                        background-color: var(--gray1);
-                        color: var(--white1);
-                    }
+            div.download {
+                margin: 30px 0;
+                text-align: center;
+
+                div.download-header {
+                    color: var(--red1);
+                    font-size: 40px;
+                }
+                div.download-speed {
+                    color: var(--blue1);
+                    font-size: 40px;
                 }
             }
         }
 
-        div.download {
-            margin: 30px 0;
-            text-align: center;
-            div.download-header {
-                color: var(--red1);
-                font-size: 40px;
-            }
-            div.download-speed {
+        div.city-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            div.dropdown-message-city {
+                display: inline;
+                background-color: var(--white1);
+                padding: 10px 0;
+                width: 100%;
+                text-align: center;
                 color: var(--blue1);
-                font-size: 40px;
+                border-radius: 5px;
+                font-size: 30px;
+                cursor: pointer;
+
+                i.fa-caret-down {
+                    font-size: 20px;
+                }
+            }
+            div.dropdown-city {
+                display: none;
+                position: absolute;
+                top: 50px;
+                background-color: #eef1f3;
+                display: none;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+
+                ul.city-list {
+                    border-radius: 0 0 5px 5px;
+                    max-height: 200px;
+                    overflow: scroll;
+                    overflow-x: hidden;
+                    list-style-type: none;
+
+                    li.city {
+                        color: var(--gray1);
+                        cursor: pointer;
+                        transition: background-color 0.1s, color 0.1s;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+                        padding: 3px 0;
+
+                        &:hover {
+                            background-color: var(--blue1);
+                            color: var(--white1);
+                        }
+
+                        &:active {
+                            background-color: var(--gray1);
+                            color: var(--white1);
+                        }
+                    }
+                }
+            }
+
+            div.table-container {
+                margin: 30px 0;
+
+                table {
+                    text-align: center;
+                    tr {
+                        th {
+                            color: var(--red1);
+                        }
+                        td {
+                            color: var(--blue1);
+                        }
+                    }
+                }
             }
         }
     }

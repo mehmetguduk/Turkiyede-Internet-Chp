@@ -5,6 +5,8 @@ section#text-1 {
     background-color: var(--white1);
     height: 100vh;
     width: 100%;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 600;
 
     div.text-container {
         display: flex;
@@ -28,10 +30,6 @@ section#text-1 {
 
         p.text {
             padding: 0 30px;
-
-            span.text-red {
-                color: var(--red1);
-            }
         }
     }
 }

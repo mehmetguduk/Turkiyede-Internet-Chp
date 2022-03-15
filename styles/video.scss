@@ -7,8 +7,8 @@ section#video {
     background-color: var(--white1);
 
     div.video-container {
-
         iframe {
+            border-radius: 20px;
         }
     }
 }

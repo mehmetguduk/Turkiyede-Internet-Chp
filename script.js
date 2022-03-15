@@ -1,4 +1,3 @@
-const ul_country_list = document.querySelector("ul.country-list")
 
 const img = document.querySelectorAll("img");
 img.forEach(element => {
@@ -188,46 +187,49 @@ const country_list = [
     { name: "Zimbabve", downloadspeed: 5.21 }
 ]
 
+const ul_country_list = document.querySelector("ul.country-list")
+const div_dropdown_message_country = document.querySelector("div.dropdown-message-country");
+const div_dropdown_country = document.querySelector("div.dropdown-country");
+const div_download_speed = document.querySelector("div.download-speed");
+const div_download = document.querySelector("div.download");
+
+let country_dropdown_toggle = true;
 
 country_list.forEach(country => {
     ul_country_list.innerHTML += `<li class="country">${country.name}</li>`
 })
 
-
-/******************************************************* */
-
-const div_dropdown_message = document.querySelector("div.dropdown-message");
-const div_dropdown = document.querySelector("div.dropdown");
-const li_country = document.querySelectorAll("li.country");
-const div_download_speed = document.querySelector("div.download-speed");
-const div_download = document.querySelector("div.download");
-
-let dropdown_toggle = true;
-
-div_dropdown_message.addEventListener("click", function (event) {
+div_dropdown_message_country.addEventListener("click", function (event) {
     event.preventDefault();
-    if (dropdown_toggle) {
-        div_dropdown.style.display = "block";
-        dropdown_toggle = false;
+    if (country_dropdown_toggle) {
+        div_dropdown_country.style.display = "block";
+        country_dropdown_toggle = false;
     }
     else {
-        div_dropdown.style.display = "none";
-        dropdown_toggle = true;
+        div_dropdown_country.style.display = "none";
+        country_dropdown_toggle = true;
     }
 })
 
+const li_country = document.querySelectorAll("li.country");
+
+
 li_country.forEach(li => {
     li.addEventListener("click", function (event) {
+        event.preventDefault();
+
         let selected = country_list.filter(function (country) {
             return country.name == event.target.textContent
         })
         let selected_name = selected[0].name
         let selected_downloadspeed = selected[0].downloadspeed
-        div_dropdown_message.innerHTML = selected_name + ' <i class="fa fa-caret-down" aria-hidden="true"></i>'
+        div_dropdown_message_country.innerHTML = selected_name + ' <i class="fa fa-caret-down" aria-hidden="true"></i>'
         div_download.innerHTML = `<div class="download-header">ORTALAMA İNDİRME HIZI</div>
         <div class="download-speed">${selected_downloadspeed + " Mbps"}</div>`
-        div_dropdown.style.display = "none";
-        dropdown_toggle = true;
+        div_dropdown_country.style.display = "none";
+        country_dropdown_toggle = true;
     })
 })
+
+/*******************************************************************************************/
 

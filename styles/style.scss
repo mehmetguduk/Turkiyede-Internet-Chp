@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap');
 
 :root {
     --red1: #ec1e27;
@@ -36,3 +37,8 @@ main {
         background: var(--blue1);
     }
 }
+
+.text-red{
+    color: var(--red1);
+}
+

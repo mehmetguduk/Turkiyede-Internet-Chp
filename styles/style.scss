@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
-:root{
-    --red1 : #ec1e27;
+:root {
+    --red1: #ec1e27;
     --blue1: #063d5d;
+    --blue2: #e4f2ff;
     --gray1: #2c2c2c;
+    --white1: #ffffff;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
 
-html{
-    font-family: 'Hammersmith One', sans-serif;
+html {
+    font-family: "Hammersmith One", sans-serif;
 }
 
-main{
+main {
     position: relative;
 }

@@ -1,11 +1,4 @@
-const div_welcome_container = document.querySelector("section.welcome")
 const ul_country_list = document.querySelector("ul.country-list")
-
-function removeWELCOME() {
-    div_welcome_container.style.display = "none";
-}
-
-setTimeout(removeWELCOME, 1000)
 
 const img = document.querySelectorAll("img");
 img.forEach(element => {
@@ -204,14 +197,14 @@ country_list.forEach(country => {
 /******************************************************* */
 
 const div_dropdown_message = document.querySelector("div.dropdown-message");
-const div_dropdown_bar = document.querySelector("div.dropdown-bar");
 const div_dropdown = document.querySelector("div.dropdown");
 const li_country = document.querySelectorAll("li.country");
 const div_download_speed = document.querySelector("div.download-speed");
+const div_download = document.querySelector("div.download");
 
 let dropdown_toggle = true;
 
-div_dropdown_bar.addEventListener("click", function (event) {
+div_dropdown_message.addEventListener("click", function (event) {
     event.preventDefault();
     if (dropdown_toggle) {
         div_dropdown.style.display = "block";
@@ -230,8 +223,11 @@ li_country.forEach(li => {
         })
         let selected_name = selected[0].name
         let selected_downloadspeed = selected[0].downloadspeed
-        div_dropdown_message.innerHTML = selected_name
-        div_download_speed.innerHTML =  selected_downloadspeed + " Mbps"
+        div_dropdown_message.innerHTML = selected_name + ' <i class="fa fa-caret-down" aria-hidden="true"></i>'
+        div_download.innerHTML = `<div class="download-header">ORTALAMA İNDİRME HIZI</div>
+        <div class="download-speed">${selected_downloadspeed + " Mbps"}</div>`
+        div_dropdown.style.display = "none";
+        dropdown_toggle = true;
     })
 })
 

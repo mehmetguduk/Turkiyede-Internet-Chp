@@ -4,62 +4,76 @@ section#countries {
     justify-content: center;
     align-items: center;
     user-select: none;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
 
-    div.dropdown-bar {
+    div.dropdown-container {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-
-        margin-top: 5px;
-        width: 400px;
+        align-items: center;
+        padding: 100px;
 
         div.dropdown-message {
             display: inline;
-            background-color: lightslategray; // SİLİNECEK
-            padding: 5px 50px;
-            cursor: pointer;
-        }
-        button.dropdown-button {
-            display: inline;
-            border: none;
-            background-color: lightslategray; // SİLİNECEK
-            padding: 4.9px 10px;
+            background-color: var(--blue2); // SİLİNECEK
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            color: var(--blue1);
+            border-radius: 5px;
+            font-size: 30px;
             cursor: pointer;
 
             i.fa-caret-down {
                 font-size: 20px;
             }
         }
-    }
 
-    div.dropdown {
-        background-color: lightblue; // SİLİNECEK
-        width: 400px;
-        display: none;
+        div.dropdown {
+            background-color: #e8eff5; // SİLİNECEK
+            display: none;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
 
-        ul.country-list {
-            max-height: 200px;
-            overflow: scroll;
-            overflow-x: hidden;
+            ul.country-list {
+                max-height: 200px;
+                overflow: scroll;
+                overflow-x: hidden;
 
-            li.country {
-                cursor: pointer;
+                li.country {
+                    color: var(--red1);
+                    cursor: pointer;
+                    transition: background-color 0.1s, color 0.1s;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+                    padding: 3px 0;
 
-                &:hover {
-                    background-color: lightseagreen; // SİLİNECEK
-                }
+                    &:hover {
+                        background-color: var(--blue1);
+                        color: var(--white1);
+                    }
 
-                &:active {
-                    background-color: limegreen; // SİLİNECEK
+                    &:active {
+                        background-color: var(--red1);
+                    }
                 }
             }
         }
-    }
 
-    div.download {
-        div.download-header {
-        }
-        div.download-speed {
+        div.download {
+            margin-top: 30px;
+            text-align: center;
+            div.download-header {
+                color: var(--red1);
+                font-size: 40px;
+            }
+            div.download-speed {
+                color: var(--blue1);
+                font-size: 40px;
+            }
         }
     }
 }

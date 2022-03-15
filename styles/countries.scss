@@ -1,3 +1,5 @@
+
+
 section#countries {
     display: flex;
     flex-direction: column;
@@ -32,12 +34,12 @@ section#countries {
         }
 
         div.dropdown {
-            background-color: #e8eff5; // SİLİNECEK
+            background-color: var(--blue3);
             display: none;
             border-radius: 5px;
             width: 100%;
             text-align: center;
-            font-size: 16px;
+            font-size: 18px;
 
             ul.country-list {
                 max-height: 200px;
@@ -64,7 +66,7 @@ section#countries {
         }
 
         div.download {
-            margin-top: 30px;
+            margin: 30px 0;
             text-align: center;
             div.download-header {
                 color: var(--red1);

@@ -4,6 +4,7 @@
     --red1: #ec1e27;
     --blue1: #063d5d;
     --blue2: #e4f2ff;
+    --blue3: #e8eff5;
     --gray1: #2c2c2c;
     --white1: #ffffff;
 }
@@ -20,4 +21,18 @@ html {
 
 main {
     position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--blue2);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: var(--red1);
+
+    &:hover {
+        background: var(--blue1);
+    }
 }

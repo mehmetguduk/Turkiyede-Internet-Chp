@@ -194,8 +194,15 @@
         </section>
     </main>
 
-    <embed src="page-music.mp3" autostart="true" loop="true" width="2" height="0">
-    </embed>
+
+    
+    <audio autoplay>
+        <source class="background-music" src="page-music.mp3" type="audio/wav" />
+    </audio>
+
+    <script>
+        document.querySelector("audio").volume = 0.005
+    </script>
 
     <footer id="footer">
 

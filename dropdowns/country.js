@@ -1,4 +1,5 @@
 const country_list = [
+    { name: "Türkiye", downloadspeed: 26.34 },
     { name: "Afganistan", downloadspeed: 1.62 },
     { name: "Almanya", downloadspeed: 69.52 },
     { name: "Amerika Birleşik Devletleri", downloadspeed: 143.76 },
@@ -162,7 +163,6 @@ const country_list = [
     { name: "Tayvan", downloadspeed: 96.82 },
     { name: "Trinidad ve Tobago", downloadspeed: 79.35 },
     { name: "Tunus", downloadspeed: 7.64 },
-    { name: "Türkiye", downloadspeed: 26.34 },
     { name: "Türkmenistan", downloadspeed: 1.89 },
     { name: "Uganda", downloadspeed: 9.57 },
     { name: "Ukrayna", downloadspeed: 52.50 },

@@ -1,3 +1,5 @@
+
+
 section#text-tax {
     display: flex;
     justify-content: center;
@@ -47,6 +49,7 @@ section#text-tax {
                 color: var(--blue1);
                 font-size: 20px;
                 font-weight: 500;
+                animation: fadeIN 0.8s;
 
                 h3.text-header {
                     font-size: 26px;

@@ -64,3 +64,13 @@ a.chp-logo {
         border: 5px solid var(--white1);
     }
 }
+
+@keyframes fadeIN {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

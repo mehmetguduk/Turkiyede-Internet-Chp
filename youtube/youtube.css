@@ -1,0 +1,1 @@
+section#youtube{display:flex;align-items:center;justify-content:center}section#youtube img.clouds{position:absolute;transform:scaleX(-1);height:100%;width:100%;opacity:.2;-o-object-fit:cover;object-fit:cover;z-index:-1}section#youtube div.video-container iframe.video{border-radius:20px;box-shadow:0px 0px 30px 0px rgba(0,0,0,.37)}

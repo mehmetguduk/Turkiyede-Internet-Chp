@@ -35,6 +35,7 @@ section#dropdowns {
                 color: var(--blue1);
                 border-radius: 5px;
                 font-size: 30px;
+                font-weight: 600;
                 padding: 10px 0;
                 cursor: pointer;
                 -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
@@ -70,6 +71,7 @@ section#dropdowns {
                         color: var(--gray1);
                         transition: background-color 0.1s, color 0.1s;
                         padding: 3px 0;
+                        font-weight: 500;
                         cursor: pointer;
 
                         &:hover {
@@ -93,10 +95,12 @@ section#dropdowns {
                 div.download-header {
                     color: var(--red1);
                     font-size: 40px;
+                    font-weight: 600;
                 }
                 div.download-speed {
                     color: var(--blue1);
                     font-size: 40px;
+                    font-weight: 500;
                 }
             }
 
@@ -109,12 +113,14 @@ section#dropdowns {
                     margin: 10px 20px;
 
                     h5.card-header {
-                        font-size: 20px;
+                        font-size: 22px;
                         color: var(--red1);
+                        font-weight: 600;
                     }
                     span.card-info {
                         font-size: 20px;
                         color: var(--blue1);
+                        font-weight: 500;
                     }
                 }
             }

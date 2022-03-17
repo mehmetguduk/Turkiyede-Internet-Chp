@@ -4,7 +4,6 @@ section#form {
     justify-content: center;
     height: 100%;
     width: 100%;
-    user-select: none;
     background-color: var(--white1);
 
     div.form-container {
@@ -12,7 +11,7 @@ section#form {
         margin: 100px 400px;
 
         form {
-            width: 250px;
+            width: 260px;
 
             h3.form-header {
                 font-size: 30px;

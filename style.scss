@@ -24,6 +24,10 @@ button {
     font-family: var(--fontfamily1);
 }
 
+body {
+    user-select: none;
+}
+
 .text-bold {
     font-weight: 700;
 }
@@ -35,7 +39,6 @@ button {
 section {
     height: 100%;
     width: 100%;
-    user-select: none;
 }
 
 a {
@@ -67,4 +70,3 @@ a.chp-logo {
         opacity: 1;
     }
 }
-

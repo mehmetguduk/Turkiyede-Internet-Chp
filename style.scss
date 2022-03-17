@@ -21,20 +21,6 @@ html {
     font-family: var(--fontfamily1);
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: var(--blue2);
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 1px;
-    background: var(--red1);
-
-    &:hover {
-        background: var(--blue1);
-    }
-}
-
 .text-bold {
     font-weight: 700;
 }

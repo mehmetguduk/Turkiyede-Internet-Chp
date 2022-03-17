@@ -1,5 +1,3 @@
-
-
 section#text-tax {
     display: flex;
     justify-content: center;
@@ -13,7 +11,7 @@ section#text-tax {
         align-items: center;
         flex-direction: row;
         background-color: var(--white1);
-        margin: 0 200px;
+        margin: 0 400px;
         border-radius: 8px;
         padding: 20px;
         -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
@@ -28,16 +26,6 @@ section#text-tax {
             position: absolute;
         }
 
-        img.tax {
-            height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-            z-index: 1;
-            -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.11);
-            -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.11);
-            box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.11);
-        }
-
         div.slide-container-tax {
             position: relative;
 
@@ -45,7 +33,7 @@ section#text-tax {
                 display: none;
                 padding: 0 50px;
                 text-align: justify;
-                margin: 20px 20px 20px 40px;
+                margin: 20px 40px;
                 color: var(--blue1);
                 font-size: 20px;
                 font-weight: 500;
@@ -83,6 +71,7 @@ section#text-tax {
             }
 
             a.next-tax {
+                margin-right: 20px;
                 right: 0;
             }
 

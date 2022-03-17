@@ -38,10 +38,10 @@ section#text-tax {
             box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.11);
         }
 
-        div.slide-container {
+        div.slide-container-tax {
             position: relative;
 
-            div.slide {
+            div.slide-tax {
                 display: none;
                 padding: 0 50px;
                 text-align: justify;
@@ -60,8 +60,8 @@ section#text-tax {
                 }
             }
 
-            a.prev,
-            a.next {
+            a.prev-tax,
+            a.next-tax {
                 position: absolute;
                 top: 50%;
                 cursor: pointer;
@@ -78,19 +78,19 @@ section#text-tax {
                 }
             }
 
-            a.prev {
+            a.prev-tax {
                 margin-left: 20px;
             }
 
-            a.next {
+            a.next-tax {
                 right: 0;
             }
 
-            div.dot-container {
+            div.dot-container-tax {
                 margin-left: 20px;
                 text-align: center;
 
-                span.dot {
+                span.dot-tax {
                     display: inline-block;
                     height: 15px;
                     width: 15px;
@@ -102,8 +102,8 @@ section#text-tax {
                     transition: background-color 0.1s ease;
                 }
 
-                span.dot.active,
-                span.dot:hover {
+                span.dot-tax.active,
+                span.dot-tax:hover {
                     background-color: var(--blue1);
                 }
             }

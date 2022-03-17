@@ -1,4 +1,175 @@
-section#text-education{
-    h3.text-header{}
-    article.text-content{}
+section#text-education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white1);
+
+    article.text-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: var(--white1);
+        margin: 0 200px;
+        border-radius: 8px;
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
+
+        img.clouds {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.1;
+            position: absolute;
+        }
+
+        div.slide-container-education {
+            position: relative;
+
+            div.slide-education {
+                display: none;
+                padding: 0 50px;
+                text-align: justify;
+                margin: 20px;
+                color: var(--blue1);
+                font-size: 20px;
+                font-weight: 500;
+                animation: fadeIN 0.8s;
+
+                h3.text-header {
+                    font-size: 26px;
+                    color: var(--red1);
+                    text-align: center;
+                    margin: 20px;
+                    font-weight: 700;
+                }
+            }
+
+            a.prev-education,
+            a.next-education {
+                position: absolute;
+                top: 50%;
+                cursor: pointer;
+                background-color: var(--white1);
+                color: var(--blue1);
+                border: 1px solid rgba(6, 61, 93, 0.2);
+                border-radius: 5px;
+                padding: 5px 10px;
+                transition: background-color 0.1s ease, color 0.1s ease;
+
+                &:hover {
+                    background-color: var(--blue1);
+                    color: var(--white1);
+                }
+            }
+
+            a.prev-education {
+                margin-left: 20px;
+            }
+
+            a.next-education {
+                margin-right: 20px;
+                right: 0;
+            }
+
+            div.dot-container-education {
+                margin-left: 20px;
+                text-align: center;
+
+                span.dot-education {
+                    display: inline-block;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: var(--white1);
+                    border: 1px solid rgba(6, 61, 93, 0.2);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: background-color 0.1s ease;
+                }
+
+                span.dot-education.active,
+                span.dot-education:hover {
+                    background-color: var(--blue1);
+                }
+            }
+        }
+    }
+}
+
+/* TAB DESIGN FOR LAST SLIDE */
+
+div.slide-education {
+    div.warpper {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        input.radio {
+            display: none;
+        }
+
+        div.tabs {
+            display: flex;
+
+            label.tab {
+                display: block;
+                background-color: var(--blue1);
+                color: var(--white1);
+                font-size: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+
+                &:first-child {
+                    border-top-left-radius: 5px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 5px;
+                }
+            }
+        }
+
+        div.panels {
+            background: var(--white1);
+            border-radius: 0 5px 5px 5px;
+            padding: 20px;
+
+            div.panel {
+                display: none;
+                animation: fadeIN 0.5s;
+
+                div.panel-title {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                ul {
+                    margin: 0 10px;
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+}
+
+input#one:checked ~ div.panels div#one-panel,
+input#two:checked ~ div.panels div#two-panel,
+input#three:checked ~ div.panels div#three-panel,
+input#four:checked ~ div.panels div#four-panel,
+input#five:checked ~ div.panels div#five-panel {
+    display: block;
+}
+
+input#one:checked ~ div.tabs label#one-tab,
+input#two:checked ~ div.tabs label#two-tab,
+input#three:checked ~ div.tabs label#three-tab,
+input#four:checked ~ div.tabs label#four-tab,
+input#five:checked ~ div.tabs label#five-tab {
+    background: var(--white1);
+    color: var(--blue1);
+    border-top: 3px solid var(--blue1);
 }

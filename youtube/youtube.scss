@@ -2,6 +2,7 @@ section#youtube {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     img.clouds {
         position: absolute;
@@ -14,11 +15,80 @@ section#youtube {
     }
 
     div.video-container {
+        margin: 100px 200px;
+        border-radius: 20px;
+
+        background-color: black;
+
         iframe.video {
+            border: 10px solid black;
             border-radius: 20px;
-            -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.50);
-            -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.50);
-            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.50);
+            -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
         }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    iframe.video {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    iframe.video {
+        width: 620px;
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    iframe.video {
+        width: 500px;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    iframe.video {
+        width: 400px;
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    iframe.video {
+        width: 360px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    iframe.video {
+        width: 280px;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    iframe.video {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    iframe.video {
+        width: 180px;
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    iframe.video {
+        width: 120px;
+        height: 100px;
     }
 }

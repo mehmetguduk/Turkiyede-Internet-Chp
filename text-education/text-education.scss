@@ -11,7 +11,7 @@ section#text-education {
         align-items: center;
         flex-direction: row;
         background-color: var(--white1);
-        margin: 0 400px;
+        margin: 200px 400px;
         border-radius: 8px;
         padding: 20px;
         -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
@@ -107,6 +107,9 @@ div.slide-education {
         display: flex;
         flex-direction: column;
         margin: 20px 0;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
 
         input.radio {
             display: none;
@@ -117,10 +120,14 @@ div.slide-education {
 
             label.tab {
                 display: block;
+                width: 100%;
                 background-color: var(--blue1);
                 color: var(--white1);
                 font-size: 20px;
+                text-align: center;
                 padding: 10px 20px;
+                border-top: 3px solid var(--blue1);
+
                 cursor: pointer;
 
                 &:first-child {
@@ -135,7 +142,7 @@ div.slide-education {
 
         div.panels {
             background: var(--white1);
-            border-radius: 0 5px 5px 5px;
+            border-radius: 0 0 5px 5px;
             padding: 20px;
 
             div.panel {
@@ -145,6 +152,7 @@ div.slide-education {
                 div.panel-title {
                     font-size: 20px;
                     font-weight: bold;
+                    margin-bottom: 10px;
                 }
 
                 ul {
@@ -171,5 +179,4 @@ input#four:checked ~ div.tabs label#four-tab,
 input#five:checked ~ div.tabs label#five-tab {
     background: var(--white1);
     color: var(--blue1);
-    border-top: 3px solid var(--blue1);
 }

@@ -6,7 +6,7 @@
     --blue2: #e4f2ff;
     --blue3: #0067a3;
     --gray1: #2c2c2c;
-    --white1: #f0f0f0;
+    --white1: #f2f2f2;
     --white2: #eef1f3;
     --fontfamily1: "Work Sans", sans-serif;
 }
@@ -25,9 +25,8 @@ html {
     font-weight: 700;
 }
 
-section,
-header {
-    height: 100vh;
+section {
+    height: 100%;
     width: 100%;
     user-select: none;
 }
@@ -48,6 +47,7 @@ a.chp-logo {
         height: 100px;
         z-index: 99;
         border: 5px solid var(--white1);
+        border-radius: 2px;
     }
 }
 

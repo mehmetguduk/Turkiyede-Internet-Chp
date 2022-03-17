@@ -64,6 +64,11 @@ section#text-education {
                     background-color: var(--blue1);
                     color: var(--white1);
                 }
+
+                &:active {
+                    background-color: var(--gray1);
+                    color: var(--white1);
+                }
             }
 
             a.prev-education {
@@ -89,10 +94,16 @@ section#text-education {
                     border-radius: 50%;
                     cursor: pointer;
                     transition: background-color 0.1s ease;
+
+                    &:hover {
+                        background-color: var(--blue1);
+                    }
+                    &:active {
+                        background-color: var(--gray1);
+                    }
                 }
 
-                span.dot-education.active,
-                span.dot-education:hover {
+                span.dot-education.active {
                     background-color: var(--blue1);
                 }
             }
@@ -127,7 +138,6 @@ div.slide-education {
                 text-align: center;
                 padding: 10px 20px;
                 border-top: 3px solid var(--blue1);
-
                 cursor: pointer;
 
                 &:first-child {
@@ -136,6 +146,11 @@ div.slide-education {
 
                 &:last-child {
                     border-top-right-radius: 5px;
+                }
+
+                &:active {
+                    background-color: var(--gray1);
+                    border-top: 3px solid var(--gray1);
                 }
             }
         }

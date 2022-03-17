@@ -1,0 +1,106 @@
+section#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    background-color: var(--white1);
+
+    div.form-container {
+        display: flex;
+        margin: 100px 400px;
+
+        form {
+            width: 250px;
+
+            h3.form-header {
+                font-size: 30px;
+                text-align: center;
+                color: var(--red1);
+                margin-bottom: 10px;
+            }
+
+            div.input-container {
+                div.input-group {
+                    margin: 8px 0;
+
+                    textarea,
+                    input:not(input[type="radio"]) {
+                        width: 100%;
+                        display: block;
+                        padding: 5px 10px;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        border: 1px solid rgba(6, 61, 93, 0.4);
+                        border-radius: 3px;
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid rgba(236, 30, 39, 0.7);
+                        }
+                    }
+
+                    textarea {
+                        resize: none;
+                    }
+
+                    label:not(label.sub-label),
+                    p.question {
+                        display: inline-block;
+                        color: var(--blue1);
+                        font-weight: 600;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+            button {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 5px 10px;
+                color: var(--blue1);
+                font-size: 16px;
+                font-weight: 600;
+                background-color: var(--white1);
+                border: 1px solid rgba(6, 61, 93, 0.2);
+                border-radius: 3px;
+                transition: background-color 0.1s ease, color 0.1s ease;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--white1);
+                    background-color: var(--blue1);
+                }
+
+                &:active {
+                    color: var(--white1);
+                    background-color: var(--gray1);
+                }
+            }
+        }
+    }
+}
+
+/* @@@@@@@@@@@ CONTACT FORM @@@@@@@@@@@*/
+form.contact {
+    border-right: 1px solid rgba(6, 61, 93, 0.2);
+    padding-right: 20px;
+}
+
+/* @@@@@@@@@@@ SURVEY FORM @@@@@@@@@@@*/
+form.survey {
+    padding-left: 20px;
+
+    div.input-group {
+        div.radio-container {
+            div.select-container {
+                input[type="radio"] {
+                    cursor: pointer;
+                }
+                label.sub-label {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

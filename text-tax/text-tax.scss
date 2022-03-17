@@ -64,6 +64,11 @@ section#text-tax {
                     background-color: var(--blue1);
                     color: var(--white1);
                 }
+
+                &:active {
+                    background-color: var(--gray1);
+                    color: var(--white1);
+                }
             }
 
             a.prev-tax {
@@ -89,10 +94,16 @@ section#text-tax {
                     border-radius: 50%;
                     cursor: pointer;
                     transition: background-color 0.1s ease;
+
+                    &:hover {
+                        background-color: var(--blue1);
+                    }
+                    &:active {
+                        background-color: var(--gray1);
+                    }
                 }
 
-                span.dot-tax.active,
-                span.dot-tax:hover {
+                span.dot-tax.active {
                     background-color: var(--blue1);
                 }
             }

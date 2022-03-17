@@ -36,6 +36,14 @@ footer#footer {
                     }
                 }
 
+                &:active {
+                    background-color: var(--gray1);
+
+                    a.social-link {
+                        color: var(--white1);
+                    }
+                }
+
                 a.social-link {
                     display: flex;
                     justify-content: center;

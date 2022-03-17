@@ -17,12 +17,19 @@
     box-sizing: content-box;
 }
 
-html {
+html,
+input,
+textarea,
+button {
     font-family: var(--fontfamily1);
 }
 
 .text-bold {
     font-weight: 700;
+}
+
+.text-red {
+    color: var(--red1);
 }
 
 section {
@@ -60,3 +67,4 @@ a.chp-logo {
         opacity: 1;
     }
 }
+

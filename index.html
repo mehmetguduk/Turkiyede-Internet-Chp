@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="welcome/welcome.css">
     <link rel="stylesheet" href="youtube/youtube.css">
     <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="form/form.css">
     <link rel="stylesheet" href="style.css">
     <!--Title & Shotcut Icon-->
     <title>Türkiye'de İnternet</title>
@@ -350,9 +351,124 @@
         </section>
 
         <section id="form">
-            <form action="">
-                <div class="input-group"></div>
-            </form>
+            <div class="form-container">
+
+                <form class="contact" action="">
+                    <h3 class="form-header">İLETİŞİM</h3>
+                    <div class="input-container">
+                        <div class="input-group">
+                            <label for="name">Ad <span class="text-red">*</span></label>
+                            <input id="name" type="text" autocomplete="off" placeholder="Adınız" minlength="2" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="surname">Soyad <span class="text-red">*</span></label>
+                            <input id="surname" type="text" autocomplete="off" placeholder="Soyadınız" minlength="2"
+                                required>
+                        </div>
+                        <div class="input-group">
+                            <label for="city">İl <span class="text-red">*</span></label>
+                            <input id="city" type="text" autocomplete="off" placeholder="Yaşadığınız İl" minlength="2"
+                                required>
+                        </div>
+                        <div class="input-group">
+                            <label for="surname">İlçe <span class="text-red">*</span></label>
+                            <input id="surname" type="text" autocomplete="off" placeholder="Yaşadığınız İlçe"
+                                minlength="2" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email <span class="text-red">*</span></label>
+                            <input id="email" type="email" autocomplete="off" placeholder="Email Adresiniz" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Telefon</label>
+                            <input id="phone" type="tel" autocomplete="off"
+                                placeholder="Telefon Numaranız (Zorunlu değil)" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="messsage">Mesaj <span class="text-red">*</span></label>
+                            <textarea name="message" id="message" placeholder="Mesajınız" minlength="5" rows="10"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <button class="contact-submit" type="submit">Gönder</button>
+                </form>
+
+
+                <form class="survey" action="">
+                    <h3 class="form-header">ANKET</h3>
+                    <div class="input-container">
+                        <div class="input-group">
+                            <p class="question" id="question-1">İnternet hızınızdan memnun musunuz? <span
+                                    class="text-red">*</span></p>
+                            <div class="radio-container">
+                                <div class="select-container">
+                                    <input id="q-1-1" name="question-1" type="radio" required>
+                                    <label class="sub-label" for="q-1-1" style="color: #ed3737;">Kesinlikle
+                                        Hayır</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-1-2" name="question-1" type="radio">
+                                    <label class="sub-label" for="q-1-2" style="color: #ff7d03;">Hayır</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-1-3" name="question-1" type="radio">
+                                    <label class="sub-label" for="q-1-3" style="color: #ffa500;">Nötr</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-1-4" name="question-1" type="radio">
+                                    <label class="sub-label" for="q-1-4" style="color: #64a306">Evet</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-1-5" name="question-1" type="radio">
+                                    <label class="sub-label" for="q-1-5" style="color: #065c06;">Kesinlikle
+                                        Evet</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <p class="question" id="question-2">Uzaktan eğitim boyunca eğitim kalitesinden memnun
+                                kaldınız
+                                mı? <span class="text-red">*</span></p>
+                            <div class="radio-container">
+                                <div class="select-container">
+                                    <input id="q-2-1" name="question-2" type="radio" required>
+                                    <label class="sub-label" for="q-2-1" style="color: #ed3737;">Kesinlikle
+                                        Hayır</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-2-2" name="question-2" type="radio">
+                                    <label class="sub-label" for="q-2-2" style="color: #ff7d03;">Hayır</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-2-3" name="question-2" type="radio">
+                                    <label class="sub-label" for="q-2-3" style="color: #ffa500;">Nötr</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-2-4" name="question-2" type="radio">
+                                    <label class="sub-label" for="q-2-4" style="color: #64a306">Evet</label>
+                                </div>
+                                <div class="select-container">
+                                    <input id="q-2-5" name="question-2" type="radio">
+                                    <label class="sub-label" for="q-2-5" style="color: #065c06;">Kesinlikle Evet</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="question-label" for="question-3">Sizce hayatınızdaki en önemli kavram
+                                nedir? <span class="text-red">*</span></label>
+                            <input id="question-3" type="text" autocomplete="off" minlength="2" placeholder="Cevabınız"
+                                required>
+                        </div>
+                        <div class="input-group">
+                            <label class="question-label" for="question-4">Sizce Türkiye'nin sorunu nedir? <span
+                                    class="text-red">*</span></label>
+                            <textarea id="question-4" name="question-4" minlength="5" rows="10" placeholder="Cevabınız"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <button class="survey-submit" type="submit">Gönder</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -406,6 +522,7 @@
     <script src="welcome/welcome.js"></script>
     <script src="youtube/youtube.js"></script>
     <script src="footer/footer.js"></script>
+    <script src="form/form.js"></script>
     <script src="script.js"></script>
 </body>
 

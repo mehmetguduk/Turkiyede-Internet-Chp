@@ -1,8 +1,11 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
 section#text-tax {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--white1);
+    box-sizing: border-box;
 
     article.text-content {
         position: relative;
@@ -24,6 +27,7 @@ section#text-tax {
             object-fit: cover;
             opacity: 0.1;
             position: absolute;
+            border-radius: 8px;
         }
 
         div.slide-container-tax {
@@ -45,6 +49,10 @@ section#text-tax {
                     text-align: center;
                     margin: 20px;
                     font-weight: 700;
+                }
+
+                ul {
+                    margin-left: 20px;
                 }
             }
 
@@ -81,14 +89,13 @@ section#text-tax {
             }
 
             div.dot-container-tax {
-                margin-left: 20px;
                 text-align: center;
 
                 span.dot-tax {
                     display: inline-block;
                     height: 15px;
                     width: 15px;
-                    margin: 0 2px;
+                    margin: 10px 1px 0 1px;
                     background-color: var(--white1);
                     border: 1px solid rgba(6, 61, 93, 0.2);
                     border-radius: 50%;
@@ -107,6 +114,158 @@ section#text-tax {
                     background-color: var(--blue1);
                 }
             }
+        }
+    }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 1700px) {
+    section#text-tax {
+        article.text-content {
+            margin: 150px 350px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    section#text-tax {
+        article.text-content {
+            margin: 150px 250px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    section#text-tax {
+        article.text-content {
+            margin: 100px 200px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section#text-tax {
+        article.text-content {
+            margin: 100px 150px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section#text-tax {
+        article.text-content {
+            margin: 100px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section#text-tax {
+        article.text-content {
+            margin: 50px !important;
+            padding: 10px !important;
+        }
+
+        a.prev-tax {
+            margin-left: 10px !important;
+        }
+
+        a.next-tax {
+            margin-right: 10px !important;
+        }
+        div.slide-tax {
+            font-size: 18px !important;
+            text-align: left !important;
+        }
+        h3.text-header {
+            font-size: 24px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section#text-tax {
+        article.text-content {
+            margin: 30px !important;
+            padding: 5px !important;
+        }
+
+        a.prev-tax {
+            margin-left: 5px !important;
+        }
+
+        a.next-tax {
+            margin-right: 5px !important;
+        }
+
+        div.slide-tax {
+            padding: 0 25px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#text-tax {
+        article.text-content {
+            margin: 20px !important;
+        }
+        a.prev-tax {
+            margin-left: 2px !important;
+        }
+
+        a.next-tax {
+            margin-right: 2px !important;
+        }
+
+        div.slide-tax {
+            padding: 0 10px !important;
+            margin: 10px 20px !important;
+            font-size: 16px !important;
+        }
+
+        a.prev-tax,
+        a.next-tax {
+            padding: 10px 5px !important;
+        }
+
+        h3.text-header {
+            margin: 20px 0 !important;
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    section#text-tax {
+        article.text-content {
+            margin: 20px 0 !important;
+            border-radius: 0 !important;
+        }
+
+        a.prev-tax,
+        a.next-tax {
+            padding: 10px 3px !important;
+        }
+
+        a.prev-tax {
+            margin-left: 0 !important;
+        }
+
+        a.next-tax {
+            margin-right: 0 !important;
+        }
+        img.clouds {
+            border-radius: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 200px) {
+    section#text-tax {
+        div.slide-tax {
+            padding: 0 !important;
+            margin: 0 !important;
         }
     }
 }

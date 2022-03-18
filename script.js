@@ -4,7 +4,8 @@ img.forEach(element => {
 })
 
 /* DISABLED RIGHT CLICK */
-
+/* 
+TURN THIS ON AFTER TEST
 function clickIE() {
     if (document.all) {
         return false;
@@ -27,3 +28,6 @@ else {
     document.oncontextmenu = clickIE;
 }
 document.oncontextmenu = new Function("return false");
+*/
+
+document.querySelector(".chp-logo").style.display = "none";

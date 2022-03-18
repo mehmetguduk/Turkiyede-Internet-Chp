@@ -70,3 +70,13 @@ a.chp-logo {
         opacity: 1;
     }
 }
+
+///********SİL BURAYI**********************/
+section:not(section#text-education):not(section#text-tax):not(section#dropdowns) {
+    display: none !important;
+}
+
+footer#footer {
+    display: none !important;
+}
+/*****************************************/

@@ -1,8 +1,11 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
 section#text-education {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--white1);
+    box-sizing: border-box;
 
     article.text-content {
         position: relative;
@@ -24,6 +27,7 @@ section#text-education {
             object-fit: cover;
             opacity: 0.1;
             position: absolute;
+            border-radius: 8px;
         }
 
         div.slide-container-education {
@@ -45,6 +49,10 @@ section#text-education {
                     text-align: center;
                     margin: 20px;
                     font-weight: 700;
+                }
+
+                ul {
+                    margin-left: 20px;
                 }
             }
 
@@ -81,14 +89,13 @@ section#text-education {
             }
 
             div.dot-container-education {
-                margin-left: 20px;
                 text-align: center;
 
                 span.dot-education {
                     display: inline-block;
                     height: 15px;
                     width: 15px;
-                    margin: 0 2px;
+                    margin: 10px 1px 0 1px;
                     background-color: var(--white1);
                     border: 1px solid rgba(6, 61, 93, 0.2);
                     border-radius: 50%;
@@ -111,8 +118,7 @@ section#text-education {
     }
 }
 
-/* TAB DESIGN FOR LAST SLIDE */
-
+/* @@@@@@@@@@@@@@@@ TAB DESIGN FOR LAST SLIDE @@@@@@@@@@@@@@@@ */
 div.slide-education {
     div.warpper {
         display: flex;
@@ -138,6 +144,7 @@ div.slide-education {
                 text-align: center;
                 padding: 10px 20px;
                 border-top: 3px solid var(--blue1);
+                box-sizing: border-box;
                 cursor: pointer;
 
                 &:first-child {
@@ -194,4 +201,217 @@ input#four:checked ~ div.tabs label#four-tab,
 input#five:checked ~ div.tabs label#five-tab {
     background: var(--white1);
     color: var(--blue1);
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 1700px) {
+    section#text-education {
+        article.text-content {
+            margin: 150px 350px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    section#text-education {
+        article.text-content {
+            margin: 150px 250px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    section#text-education {
+        article.text-content {
+            margin: 100px 200px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section#text-education {
+        article.text-content {
+            margin: 100px 150px !important;
+        }
+        label.tab {
+            padding: 8px 16px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section#text-education {
+        article.text-content {
+            margin: 100px !important;
+        }
+        label.tab {
+            padding: 5px 10px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section#text-education {
+        label.tab {
+            padding: 3px 6px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section#text-education {
+        article.text-content {
+            margin: 50px !important;
+            padding: 10px !important;
+        }
+
+        a.prev-education {
+            margin-left: 10px !important;
+        }
+
+        a.next-education {
+            margin-right: 10px !important;
+        }
+
+        div.slide-education {
+            font-size: 18px !important;
+            text-align: left !important;
+        }
+        h3.text-header {
+            font-size: 24px !important;
+        }
+
+        label.tab {
+            font-size: 18px !important;
+        }
+        div.panel-title {
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    section#text-education {
+        div.tabs {
+            flex-direction: column !important;
+        }
+
+        label.tab {
+            padding: 3px 0 !important;
+            border-radius: none !important;
+
+            &:first-child {
+                border-top-left-radius: 5px !important;
+                border-top-right-radius: 5px !important;
+            }
+
+            &:last-child {
+                border-top-right-radius: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section#text-education {
+        article.text-content {
+            margin: 30px !important;
+            padding: 5px !important;
+        }
+
+        a.prev-education {
+            margin-left: 5px !important;
+        }
+
+        a.next-education {
+            margin-right: 5px !important;
+        }
+
+        div.slide-education {
+            padding: 0 25px !important;
+        }
+
+        div.panels {
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section#text-education {
+        article.text-content {
+            margin: 20px !important;
+        }
+        a.prev-education {
+            margin-left: 2px !important;
+        }
+
+        a.next-education {
+            margin-right: 2px !important;
+        }
+
+        div.slide-education {
+            padding: 0 10px !important;
+            margin: 10px 20px !important;
+            font-size: 16px !important;
+        }
+
+        a.prev-education,
+        a.next-education {
+            padding: 10px 5px !important;
+        }
+
+        h3.text-header {
+            margin: 20px 0 !important;
+            font-size: 20px !important;
+        }
+
+        label.tab {
+            font-size: 16px !important;
+        }
+
+        div.panel-title {
+            font-size: 16px !important;
+        }
+
+        div.panels {
+            padding: 10px 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    section#text-education {
+        article.text-content {
+            margin: 20px 0 !important;
+            border-radius: 0 !important;
+        }
+
+        a.prev-education,
+        a.next-education {
+            padding: 10px 3px !important;
+        }
+
+        a.prev-education {
+            margin-left: 0 !important;
+        }
+
+        a.next-education {
+            margin-right: 0 !important;
+        }
+
+        img.clouds {
+            border-radius: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 200px) {
+    section#text-education {
+        div.slide-education {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
 }

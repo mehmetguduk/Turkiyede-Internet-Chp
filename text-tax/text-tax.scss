@@ -205,6 +205,14 @@ section#text-tax {
     }
 }
 
+@media screen and (max-width: 500px) {
+    section#text-tax {
+        div.slide-tax {
+            padding: 0 5px !important;
+        }
+    }
+}
+
 @media screen and (max-width: 400px) {
     section#text-tax {
         article.text-content {
@@ -219,7 +227,6 @@ section#text-tax {
         }
 
         div.slide-tax {
-            padding: 0 10px !important;
             margin: 10px 20px !important;
             font-size: 16px !important;
         }

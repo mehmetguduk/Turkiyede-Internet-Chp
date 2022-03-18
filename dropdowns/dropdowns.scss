@@ -133,97 +133,105 @@ section#dropdowns {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @media screen and (max-width: 800px) {
-    div.dropdown-message-country,
-    div.dropdown-message-city {
-        font-size: 26px !important;
-    }
-    div.download-header,
-    div.download-speed {
-        font-size: 34px !important;
-    }
-    h5.card-header {
-        font-size: 20px !important;
-    }
-    span.card-info {
-        font-size: 18px !important;
-    }
-    div.dropdown-country,
-    div.dropdown-city {
-        top: 45px !important;
-    }
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            font-size: 26px !important;
+        }
+        div.download-header,
+        div.download-speed {
+            font-size: 34px !important;
+        }
+        h5.card-header {
+            font-size: 20px !important;
+        }
+        span.card-info {
+            font-size: 18px !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            top: 45px !important;
+        }
 
-    div.dropdowns-container {
-        margin: 150px !important;
+        div.dropdowns-container {
+            margin: 150px !important;
+        }
     }
 }
 
 @media screen and (max-width: 600px) {
-    div.dropdown-message-country,
-    div.dropdown-message-city {
-        font-size: 22px !important;
-        width: 350px !important;
-    }
-    div.download-header,
-    div.download-speed {
-        font-size: 30px !important;
-    }
-    div.dropdown-country,
-    div.dropdown-city {
-        top: 40px !important;
-        width: 350px !important;
-    }
-    div.dropdowns-container {
-        margin: 100px !important;
-    }
-    h5.card-header {
-        font-size: 18px !important;
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            font-size: 22px !important;
+            width: 350px !important;
+        }
+        div.download-header,
+        div.download-speed {
+            font-size: 30px !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            top: 40px !important;
+            width: 350px !important;
+        }
+        div.dropdowns-container {
+            margin: 100px !important;
+        }
+        h5.card-header {
+            font-size: 18px !important;
+        }
     }
 }
 
 @media screen and (max-width: 400px) {
-    div.dropdown-message-country,
-    div.dropdown-message-city {
-        width: 250px !important;
-    }
-    div.dropdown-country,
-    div.dropdown-city {
-        width: 250px !important;
-    }
-    div.dropdowns-container {
-        margin: 100px 20px !important;
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            width: 250px !important;
+        }
+        div.dropdown-country,
+        div.dropdown-city {
+            width: 250px !important;
+        }
+        div.dropdowns-container {
+            margin: 100px 20px !important;
+        }
     }
 }
 
 @media screen and (max-width: 300px) {
-    div.dropdown-message-country,
-    div.dropdown-message-city {
-        font-size: 20px !important;
-        width: 100% !important;
-        border-radius: 0 !important;
-    }
-    div.dropdown-country,
-    div.dropdown-city {
-        width: 100% !important;
-
-        ul.city-list,
-        ul.country-list {
+    section#dropdowns {
+        div.dropdown-message-country,
+        div.dropdown-message-city {
+            font-size: 20px !important;
+            width: 100% !important;
             border-radius: 0 !important;
         }
-    }
-    div.download-header,
-    div.download-speed {
-        font-size: 26px !important;
-        word-wrap: break-word !important;
-    }
+        div.dropdown-country,
+        div.dropdown-city {
+            width: 100% !important;
 
-    h5.card-header {
-        word-wrap: break-word !important;
-    }
-    span.card-info {
-        word-wrap: break-word !important;
-    }
+            ul.city-list,
+            ul.country-list {
+                border-radius: 0 !important;
+            }
+        }
+        div.download-header,
+        div.download-speed {
+            font-size: 26px !important;
+            word-wrap: break-word !important;
+        }
 
-    div.dropdowns-container {
-        margin: 100px 0 !important;
+        h5.card-header {
+            word-wrap: break-word !important;
+        }
+        span.card-info {
+            word-wrap: break-word !important;
+        }
+
+        div.dropdowns-container {
+            margin: 100px 0 !important;
+        }
     }
 }

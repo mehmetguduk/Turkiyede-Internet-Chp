@@ -16,7 +16,6 @@ section#youtube {
     div.video-container {
         margin: 100px 200px;
         border-radius: 20px;
-
         background-color: black;
 
         iframe.video {
@@ -30,64 +29,99 @@ section#youtube {
 }
 
 @media only screen and (min-width: 1400px) {
-    iframe.video {
-        width: 800px;
-        height: 500px;
+    section#youtube {
+        iframe.video {
+            width: 800px;
+            height: 500px;
+        }
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    iframe.video {
-        width: 620px;
-        height: 340px;
+    section#youtube {
+        iframe.video {
+            width: 620px;
+            height: 340px;
+        }
+        div.video-container {
+            margin: 100px 150px !important;
+        }
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    iframe.video {
-        width: 500px;
-        height: 280px;
+    section#youtube {
+        iframe.video {
+            width: 500px;
+            height: 280px;
+            border-radius: 15px !important;
+        }
+
+        div.video-container {
+            border-radius: 10px !important;
+        }
     }
 }
 
 @media only screen and (max-width: 800px) {
-    iframe.video {
-        width: 400px;
-        height: 220px;
+    section#youtube {
+        iframe.video {
+            width: 400px;
+            height: 220px;
+        }
     }
 }
 
 @media only screen and (max-width: 700px) {
-    iframe.video {
-        width: 360px;
-        height: 200px;
+    section#youtube {
+        iframe.video {
+            width: 360px;
+            height: 200px;
+        }
     }
 }
 
 @media only screen and (max-width: 500px) {
-    iframe.video {
-        width: 280px;
-        height: 160px;
+    section#youtube {
+        iframe.video {
+            width: 280px;
+            height: 160px;
+        }
+
+        div.video-container {
+            border-radius: 5px !important;
+        }
     }
 }
 
 @media only screen and (max-width: 400px) {
-    iframe.video {
-        width: 250px;
-        height: 150px;
+    section#youtube {
+        iframe.video {
+            width: 250px;
+            height: 150px;
+        }
     }
 }
 
 @media only screen and (max-width: 300px) {
-    iframe.video {
-        width: 180px;
-        height: 110px;
+    section#youtube {
+        iframe.video {
+            width: 180px;
+            height: 110px;
+            border: 5px solid black !important;
+        }
+        div.video-container {
+            margin: 100px 0 !important;
+        }
     }
 }
 
-@media only screen and (max-width: 200px) {
-    iframe.video {
-        width: 120px;
-        height: 100px;
+@media only screen and (max-width: 230px) {
+    section#youtube {
+        iframe.video {
+            width: 120px;
+            height: 100px;
+            border: 3px solid black !important;
+        }
     }
 }

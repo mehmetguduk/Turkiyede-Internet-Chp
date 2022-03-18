@@ -1,3 +1,5 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
 footer#footer {
     position: relative;
     height: 300px;
@@ -13,14 +15,17 @@ footer#footer {
         img.chpgk-logo {
             height: 100px;
             margin: 0 30px;
+            object-fit: cover;
         }
 
         ul.socials {
             display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 0 30px;
 
             li.social {
-                margin: 0 5px;
+                margin: 5px 5px;
                 height: 40px;
                 width: 40px;
                 background-color: var(--white1);
@@ -61,16 +66,109 @@ footer#footer {
         }
 
         p.adress {
+            font-size: 16px;
             width: 320px;
             color: var(--white1);
             margin: 0 30px;
         }
 
         p.copyright-text {
+            font-size: 16px;
             opacity: 0.3;
             color: var(--white1);
             position: absolute;
             bottom: 20px;
+        }
+    }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 1200px) {
+    footer#footer {
+        img.chpgk-logo {
+            height: 76px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer#footer {
+        img.chpgk-logo {
+            margin: 0 20px !important;
+        }
+        ul.socials {
+            margin: 0 20px !important;
+        }
+        p.adress {
+            margin: 0 20px !important;
+            font-size: 15px !important;
+        }
+
+        li.social {
+            width: 35px !important;
+            height: 35px !important;
+        }
+
+        i.fa {
+            font-size: 20px;
+        }
+
+        p.copyright-text {
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer#footer {
+        img.chpgk-logo {
+            height: 60px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer#footer {
+        height: 100% !important;
+        padding: 10px 0;
+
+        div.footer-container {
+            flex-direction: column;
+        }
+
+        img.chpgk-logo {
+            margin: 10px 0 !important;
+        }
+
+        ul.socials {
+            margin: 10px 0 !important;
+            flex-wrap: wrap;
+        }
+
+        p.adress {
+            text-align: center;
+            margin: 10px 0 !important;
+            word-wrap: break-word;
+            width: 100% !important;
+            padding: 0 5px;
+        }
+
+        p.copyright-text {
+            text-align: center;
+            position: relative !important;
+            bottom: auto !important;
+            margin: 10px 0 !important;
+            padding: 0 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 260px) {
+    footer#footer {
+        img.chpgk-logo {
+            width: 100% !important;
+            height: 100% !important;
         }
     }
 }

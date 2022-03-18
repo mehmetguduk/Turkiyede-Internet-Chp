@@ -26,6 +26,7 @@ button {
 
 body {
     user-select: none;
+    overflow-x: hidden;
 }
 
 .text-bold {
@@ -70,13 +71,3 @@ a.chp-logo {
         opacity: 1;
     }
 }
-
-///********SİL BURAYI**********************/
-section:not(section#text-education):not(section#text-tax):not(section#dropdowns):not(section#youtube):not(section#form) {
-    display: none !important;
-}
-
-footer#footer {
-    display: none !important;
-}
-/*****************************************/

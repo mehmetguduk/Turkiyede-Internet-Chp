@@ -163,7 +163,7 @@ section#text-tax {
 @media screen and (max-width: 800px) {
     section#text-tax {
         article.text-content {
-            margin: 50px !important;
+            margin: 100px 50px !important;
             padding: 10px !important;
         }
 
@@ -187,7 +187,7 @@ section#text-tax {
 @media screen and (max-width: 600px) {
     section#text-tax {
         article.text-content {
-            margin: 30px !important;
+            margin: 100px 30px !important;
             padding: 5px !important;
         }
 
@@ -216,7 +216,7 @@ section#text-tax {
 @media screen and (max-width: 400px) {
     section#text-tax {
         article.text-content {
-            margin: 20px !important;
+            margin: 100px 20px !important;
         }
         a.prev-tax {
             margin-left: 2px !important;
@@ -246,7 +246,7 @@ section#text-tax {
 @media screen and (max-width: 300px) {
     section#text-tax {
         article.text-content {
-            margin: 20px 0 !important;
+            margin: 100px 0 !important;
             border-radius: 0 !important;
         }
 

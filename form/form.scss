@@ -1,3 +1,5 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
 section#form {
     display: flex;
     align-items: center;
@@ -18,6 +20,7 @@ section#form {
                 text-align: center;
                 color: var(--red1);
                 margin-bottom: 10px;
+                font-weight: 600;
             }
 
             div.input-container {
@@ -49,6 +52,7 @@ section#form {
                         display: inline-block;
                         color: var(--blue1);
                         font-weight: 600;
+                        font-size: 16px;
                         margin-bottom: 3px;
                     }
                 }
@@ -98,8 +102,61 @@ form.survey {
                 }
                 label.sub-label {
                     font-weight: 500;
+                    font-size: 16px;
                 }
             }
+        }
+    }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 700px) {
+    section#form {
+        div.form-container {
+            flex-direction: column;
+        }
+
+        form.contact {
+            padding: 0 0 40px 0 !important;
+            border-right: none !important;
+            border-bottom: 1px solid rgba(6, 61, 93, 0.2);
+        }
+
+        form.survey {
+            padding: 40px 0 0 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    section#form {
+        form {
+            width: 200px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    section#form {
+        h3.form-header {
+            font-size: 26px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 270px) {
+    section#form {
+        form {
+            width: 180px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 220px) {
+    section#form {
+        form {
+            width: 130px !important;
         }
     }
 }

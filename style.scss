@@ -72,7 +72,7 @@ a.chp-logo {
 }
 
 ///********SİL BURAYI**********************/
-section:not(section#text-education):not(section#text-tax):not(section#dropdowns):not(section#youtube) {
+section:not(section#text-education):not(section#text-tax):not(section#dropdowns):not(section#youtube):not(section#form) {
     display: none !important;
 }
 

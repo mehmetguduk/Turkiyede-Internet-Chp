@@ -1,3 +1,5 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
 section#youtube {
     display: flex;
     align-items: center;
@@ -27,6 +29,8 @@ section#youtube {
         }
     }
 }
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESPONSIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @media only screen and (min-width: 1400px) {
     section#youtube {

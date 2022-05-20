@@ -1,2 +1,2 @@
 # Türkiye'de İnternet
-#### LINK
+#### https://turkiyedeinternetchp-mg.netlify.app/

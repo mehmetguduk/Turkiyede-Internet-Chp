@@ -1,3 +1,9 @@
+/*
+    THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+    © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    https://github.com/mehmetguduk
+*/
+
 const city_list = [
     { name: "Türkiye Geneli", population: 83614362, lucky: 5304220, ratio: 15 },
     { name: "Adana", population: 2258718, lucky: 163817, ratio: 13 },
